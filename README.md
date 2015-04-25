@@ -29,7 +29,7 @@ As a preparation for step 2, I am applying the variable names from features.txt 
 I am finding the column numbers of all column names with mean() and std() from the overall column names. I am only selecting columns with mean() and not meanFreq() since these columns with meanFreq() did not represent the mean but the weighted average of the frequency components to obtain a mean frequency.
 
 I am using the following command to combine the column IDs for mean() and std(): as.vector(rbind(meanColumns,stdColumns)).
-Let's say we have a vector a <- c(1,2,3) and a vector b <- c(4,5,6). Then using as.vector and rbind in the way as in the script will result in the following when combining the vector:
+Let's say we have a vector a <- c(1,2,3) and a vector b <- c(4,5,6). When using as.vector and rbind in the way as in the script, it will result in the following:
 
 a <- c(1,2,3)
 
@@ -64,7 +64,7 @@ The final data set is tidy since it follows the following principles:
 
 The last item does not apply since we have only one table.I believe that all variables (except the obligatory subject ID and activity identifier) are of the same kind, namely activity measurements. 
 
-Furthermore, I have followed the following point:
+Furthermore, I have followed the following points:
 
 * there is a row at the top of each file with variable names
 * the variable names are human readable and descriptive
